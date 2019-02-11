@@ -4,7 +4,7 @@ A way to transform a hash to a prime number.
 # Explaining
 This is a method that allows calculate a prime number using a hash. 
 The idea is really simple: we generate a number n passing the hash from 16-basis to a special basis, 
-taken the value of tha char in 10-basis and multiply by 2î, where i is the position of the char in the string. 
+taken the value of tha char in 10-basis and multiply by 2^i, where i is the position of the char in the string. 
 This number n, we calculate the rest module 31, obtaining an other number d. We find the numbers x=2^d-1 and y=2^(d+1)-1.
 We call a function that returns the first prime nuber in [x,y]. This will be our choice. 
   
